@@ -115,9 +115,8 @@ Create config:
 <pre >sudo nano /etc/apache2/sites-available/snipeit.conf </pre>
 
 Paste:
-<pre>
-   
- '''<VirtualHost *:80>
+ <pre><VirtualHost *:80></pre>
+ <pre>
     ServerAdmin admin@example.com
     DocumentRoot /var/www/snipeit/public
     ServerName your-server-ip
