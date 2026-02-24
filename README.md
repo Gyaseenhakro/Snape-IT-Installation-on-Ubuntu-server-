@@ -2,11 +2,11 @@
 Open source Inventory Managment tool  
 
 # Install Ubuntu  Server 22.04 
-<div>
+<pre>
 apt update 
 apt install apache2 
 assinged static IP to server 
-</div>
+</pre>
 
 
 
