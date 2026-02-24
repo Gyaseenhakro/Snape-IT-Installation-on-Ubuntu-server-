@@ -115,8 +115,9 @@ Create config:
 <pre >sudo nano /etc/apache2/sites-available/snipeit.conf </pre>
 
 Paste:
-<pre>'''
-<VirtualHost *:80>
+<pre>
+   
+ '''<VirtualHost *:80>
     ServerAdmin admin@example.com
     DocumentRoot /var/www/snipeit/public
     ServerName your-server-ip
@@ -128,8 +129,8 @@ Paste:
 
     ErrorLog ${APACHE_LOG_DIR}/snipeit_error.log
     CustomLog ${APACHE_LOG_DIR}/snipeit_access.log combined
-</VirtualHost>
-    '''</pre>
+</VirtualHost> /'''
+    </pre>
 Save.
 
 Enable site & rewrite:
