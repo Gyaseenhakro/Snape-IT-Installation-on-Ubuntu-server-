@@ -1,5 +1,5 @@
 # Snape-IT-Installation-on-Ubuntu-server-
-Open source Inventory Managment tool  
+****Open source Inventory Managment Software 
 
 # Install Ubuntu  Server 22.04 
 <pre>
@@ -20,7 +20,7 @@ sudo apt update && sudo apt upgrade -y </pre>
 
 ✅ STEP 2 — Install Apache
 
-<p >sudo apt install apache2 -y </p>
+<pre >sudo apt install apache2 -y </pre>
 Enable & start:<pre>
 sudo systemctl enable apache2
 sudo systemctl start apache2 
@@ -52,7 +52,7 @@ php -v </pre>
 
 ✅ STEP 5 — Create Database for Snipe-IT
 Login to MySQL:
-<p> sudo mysql -u root -p </p> 
+<pre> sudo mysql -u root -p </pre> 
 Inside MySQL:
 <pre>CREATE DATABASE snipeit;
 CREATE USER 'snipeuser'@'localhost' IDENTIFIED BY 'StrongPassword123!';
@@ -80,13 +80,13 @@ cd snipeit
 
 
 ✅ STEP 8 — Install PHP Dependencies
-<p> sudo composer install --no-dev --prefer-source </p>
+<pre> sudo composer install --no-dev --prefer-source </pre>
 
 ✅ STEP 9 — Configure Environment File
 Copy example file:
-<p >sudo cp .env.example .env </p>
+<pre >sudo cp .env.example .env </pre>
 Edit it:
-<p >sudo nano .env </p>
+<pre >sudo nano .env </pre>
 
 Update these values:
 <pre>
@@ -100,7 +100,7 @@ Save & exit.
 
 ✅ STEP 10 — Generate App Key
 
-<p> sudo php artisan key:generate</p>
+<pre> sudo php artisan key:generate</pre>
 
 ✅ STEP 11 — Set Permissions
 <pre>
@@ -112,7 +112,7 @@ sudo chmod -R 775 public/uploads
 
 ✅ STEP 12 — Configure Apache Virtual Host
 Create config:
-<p >sudo nano /etc/apache2/sites-available/snipeit.conf </p>
+<pre >sudo nano /etc/apache2/sites-available/snipeit.conf </pre>
 
 Paste:
 <pre>
@@ -142,7 +142,7 @@ sudo systemctl restart apache2
 
 ✅ STEP 13 — Open in Browser
 Go to:
-<p >http://your-server-ip </p>
+<pre>http://your-server-ip </pre>
 Follow the web installer to complete setup.
 
 # 🎯 Done!
