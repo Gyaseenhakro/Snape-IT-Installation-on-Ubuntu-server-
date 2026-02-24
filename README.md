@@ -129,7 +129,7 @@ Paste:
 
     ErrorLog ${APACHE_LOG_DIR}/snipeit_error.log
     CustomLog ${APACHE_LOG_DIR}/snipeit_access.log combined
-</VirtualHost> /'''
+</VirtualHost>
     </pre>
 Save.
 
