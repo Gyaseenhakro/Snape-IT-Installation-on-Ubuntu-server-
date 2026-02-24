@@ -2,11 +2,11 @@
 Open source Inventory Managment tool  
 
 # Install Ubuntu  Server 22.04 
-
+< a >
 apt update 
 apt install apache2 
 assinged static IP to server 
-
+</a >
 
 
 
@@ -17,17 +17,20 @@ sudo apt update && sudo apt upgrade -y
 
 
 ✅ STEP 2 — Install Apache
+<p>
 sudo apt install apache2 -y
 Enable & start:
 sudo systemctl enable apache2
-sudo systemctl start apache2
+sudo systemctl start apache2 
+</p>
+
 
 
 ✅ STEP 3 — Install PHP (Required Version)
 Snipe-IT needs PHP 8.1+
 sudo apt install php php-cli php-common php-curl php-mbstring php-xml php-bcmath php-zip php-gd php-mysql libapache2-mod-php unzip curl -y
 Check version:
-php -v
+php -v 
 
 
 ✅ STEP 4 — Install MariaDB (Database)
