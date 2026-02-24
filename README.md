@@ -19,9 +19,9 @@ sudo apt update && sudo apt upgrade -y </pre>
 
 
 ✅ STEP 2 — Install Apache
-<pre>
-sudo apt install apache2 -y
-Enable & start:
+
+<p >sudo apt install apache2 -y </p>
+Enable & start:<pre>
 sudo systemctl enable apache2
 sudo systemctl start apache2 
 </pre>
@@ -44,11 +44,11 @@ php -v </pre>
     sudo mysql_secure_installation
 </pre>
 
-Answer:
-Set root password → Yes
-Remove anonymous users → Yes
-Disallow root remote login → No
-Remove test DB → Yes
+<br>Answer:
+<br>Set root password → Yes
+<br>Remove anonymous users → Yes
+<br>Disallow root remote login → No
+<br>Remove test DB → Yes
 
 ✅ STEP 5 — Create Database for Snipe-IT
 Login to MySQL:
@@ -65,7 +65,6 @@ EXIT;
 
 ✅ STEP 6 — Install Composer
 <pre>
-
 sudo apt install composer -y  </pre>
 
 Check:
