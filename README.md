@@ -131,7 +131,7 @@ Paste:
     CustomLog ${APACHE_LOG_DIR}/snipeit_access.log combined
     </pre>
 </ VirtualHost>
-<br>
+<br><br><br>
 Save.
 
 Enable site & rewrite:
